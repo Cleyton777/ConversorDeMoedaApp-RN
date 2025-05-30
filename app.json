@@ -17,6 +17,8 @@
     },
     "android": {
       "adaptiveIcon": {
+         "package": "com.yourcompany.meuconversor",
+      "versionCode": 1, 
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }

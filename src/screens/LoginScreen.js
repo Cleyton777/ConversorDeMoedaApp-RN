@@ -35,25 +35,42 @@ function LoginScreen() {
 }
 
 const styles = StyleSheet.create({
+  safeArea: {
+    flex: 1,
+    backgroundColor: '#F0F2F5', // Fundo cinza claro, igual às outras telas
+  },
   container: {
     flex: 1,
-    backgroundColor: 'skyblue',
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
   },
- 
   title: {
-    fontSize: 24,
-    marginBottom: 20,
+    fontSize: 32, // Título maior
+    fontWeight: 'bold',
+    color: '#333',
+    marginBottom: 50, // Mais espaço abaixo do título
+  
+  },
+  inputContainer: {
+    width: '80%', // Container para os inputs
+    marginBottom: 30, // Espaço abaixo dos inputs
   },
   input: {
-    width: '30%',
-    padding: 10,
-    marginBottom: 10,
+    width: '100%', // Ocupa a largura do inputContainer
+    height: 50, // Mais alto
+    paddingHorizontal: 15,
+    marginBottom: 15, // Espaço entre os inputs
     borderWidth: 1,
-    borderColor: '#888',
-    borderRadius: 5,
+    borderColor: '#CCC',
+    borderRadius: 10, // Bordas arredondadas
+    fontSize: 18, // Texto maior
+    backgroundColor: '#FFF', // Fundo branco
+    shadowColor: '#000', // Sombra suave
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 3,
+    elevation: 3, // Sombra para Android
   },
 });
 
